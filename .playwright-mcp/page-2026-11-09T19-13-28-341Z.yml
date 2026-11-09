@@ -1,0 +1,99 @@
+- generic [active] [ref=e1]:
+  - link "Saltar al contenido" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic [ref=e3]:
+    - complementary "Navegación y temas" [ref=e4]:
+      - link "Entre líneas, ir al estudio" [ref=e5] [cursor=pointer]:
+        - /url: "#estudio"
+        - generic [ref=e12]: entrelíneas.
+      - generic [ref=e13]:
+        - navigation "Principal" [ref=e14]:
+          - button "Estudio" [ref=e15] [cursor=pointer]
+          - button "Mis ideas 0" [ref=e17] [cursor=pointer]:
+            - text: Mis ideas
+            - generic [ref=e18]: "0"
+        - generic [ref=e19]:
+          - heading "Tu universo" [level=2] [ref=e20]
+          - button "Desmarcar todos los temas" [ref=e21] [cursor=pointer]: Limpiar
+        - paragraph [ref=e22]: Elige de dónde viene la inspiración.
+        - generic "Temas para generar palabras" [ref=e23]:
+          - button "Artistas" [pressed] [ref=e24] [cursor=pointer]
+          - button "Joyas y materiales" [pressed] [ref=e27] [cursor=pointer]
+          - button "Momentos" [pressed] [ref=e30] [cursor=pointer]
+          - button "Parejas icónicas" [pressed] [ref=e33] [cursor=pointer]
+          - button "Famosos" [pressed] [ref=e36] [cursor=pointer]
+          - button "Cine y series" [pressed] [ref=e39] [cursor=pointer]
+          - button "Actores" [pressed] [ref=e42] [cursor=pointer]
+          - button "Superhéroes" [pressed] [ref=e45] [cursor=pointer]
+          - button "Lugares" [pressed] [ref=e48] [cursor=pointer]
+          - button "Emociones" [pressed] [ref=e51] [cursor=pointer]
+          - button "Naturaleza" [pressed] [ref=e54] [cursor=pointer]
+          - button "Objetos y símbolos" [pressed] [ref=e57] [cursor=pointer]
+        - paragraph [ref=e63]: Las mejores ideas aparecendonde menos las buscas.
+      - button "¿Cómo funciona?" [ref=e64] [cursor=pointer]
+    - generic [ref=e65]:
+      - banner [ref=e66]:
+        - generic [ref=e67]:
+          - generic [ref=e68]: Tu espacio creativo
+          - generic [ref=e69]: /
+          - strong [ref=e70]: Estudio
+        - generic [ref=e71]:
+          - generic [ref=e73]: Sin ruido. Solo ideas.
+          - generic [aria-hidden] [ref=e74]: el.
+      - main [ref=e75]:
+        - region "Las palabras están ahí. Encuentra tu conexión." [ref=e76]:
+          - generic [ref=e78]:
+            - heading [level=1] [ref=e79]:
+              - text: Las palabras están ahí.Encuentra
+              - emphasis [ref=e80]: tu conexión.
+            - paragraph [ref=e81]: Dos o tres palabras. Una conexión inesperada. Tu próxima letra.
+          - generic [ref=e88]:
+            - generic [ref=e89]:
+              - generic [ref=e90]: Palabras por ronda
+              - group "Cantidad de palabras" [ref=e91]:
+                - button "2" [ref=e92] [cursor=pointer]
+                - button "3" [pressed] [ref=e93] [cursor=pointer]
+            - button "Generar ideas" [ref=e95] [cursor=pointer]
+          - generic "Tu combinación de palabras" [ref=e96]:
+            - article [ref=e97]:
+              - img "Joyería fotografiada de cerca; imagen de ambiente, no una certificación de calidad" [ref=e98]
+              - generic [ref=e99]:
+                - generic [ref=e100]: "01"
+                - button "Fijar VVS" [ref=e101] [cursor=pointer]
+              - generic [ref=e102]:
+                - generic [ref=e103]: Joyas y materiales
+                - heading "VVS" [level=2] [ref=e107]
+            - article [ref=e109]:
+              - img "Luces de una ciudad de noche; imagen de ambiente" [ref=e110]
+              - generic [ref=e111]:
+                - generic [ref=e112]: "02"
+                - button "Fijar Medianoche" [ref=e113] [cursor=pointer]
+              - generic [ref=e114]:
+                - generic [ref=e115]: Momentos
+                - heading "Medianoche" [level=2] [ref=e119]
+            - article [ref=e121]:
+              - img "La Tierra fotografiada desde el espacio; imagen cinematográfica de ambiente, no un fotograma de la obra" [ref=e122]
+              - generic [ref=e123]:
+                - generic [ref=e124]: "03"
+                - button "Fijar Interestelar" [ref=e125] [cursor=pointer]
+              - generic [ref=e126]:
+                - generic [ref=e127]: Cine y series
+                - heading "Interestelar" [level=2] [ref=e131]
+          - generic [ref=e133]:
+            - paragraph [ref=e134]: ¿Te gusta una palabra? Fíjala y cambia las demás.
+            - generic [ref=e137]:
+              - button "Copiar" [ref=e138] [cursor=pointer]
+              - button "Guardar idea" [ref=e139] [cursor=pointer]
+          - region "De la idea al papel" [ref=e140]:
+            - generic [ref=e141]:
+              - heading "De la idea al papel" [level=2] [ref=e142]
+              - generic [ref=e145]: Guardado en este navegador
+            - generic [ref=e149]: Escribe tus letras e ideas
+            - textbox "Escribe tus letras e ideas" [ref=e150]:
+              - /placeholder: No tiene que rimar todavía. Deja salir la primera línea…
+            - generic [ref=e151]:
+              - generic [ref=e152]: Este espacio es tuyo. Escribe sin juzgarte.
+              - generic [ref=e153]: 0 / 10 000
+          - generic [ref=e154]:
+            - paragraph [ref=e155]: Un punto de partida. El resto lleva tu firma.
+            - generic [ref=e156]: 432 palabras · 12 universos · conexiones inesperadas

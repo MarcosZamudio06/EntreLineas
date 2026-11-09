@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#151615">
+  <meta name="description" content="Encuentra conexiones inesperadas para tus letras. Combina palabras e imágenes, guarda ideas y escribe tu próxima barra en Entre líneas.">
+  <title>Entre líneas — Ideas que suenan a ti</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/dm-sans-regular.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="src/styles.css">
+  <script type="module" src="src/app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Saltar al contenido</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="Navegación y temas" inert>
+      <a class="brand" href="#estudio" aria-label="Entre líneas, ir al estudio"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>entre<span class="brand-light">líneas</span><span class="brand-period">.</span></span></a>
+      <div class="sidebar-body">
+        <nav class="primary-nav" aria-label="Principal">
+          <button class="nav-item active" id="studio-nav" type="button" aria-current="page"><svg><use href="assets/icons.svg#grid"/></svg>Estudio<span class="nav-dot" aria-hidden="true"></span></button>
+          <button class="nav-item" id="ideas-nav" type="button"><svg><use href="assets/icons.svg#bookmark"/></svg>Mis ideas<span class="idea-count" id="saved-count">0</span></button>
+        </nav>
+        <div class="topics-heading"><h2>Tu universo</h2><button id="all-topics" type="button">Todos</button></div>
+        <p class="topics-description">Elige de dónde viene la inspiración.</p>
+        <div class="category-list" id="category-list" aria-label="Temas para generar palabras"></div>
+        <div class="sidebar-note"><svg aria-hidden="true"><use href="assets/icons.svg#spark"/></svg><p>Las mejores ideas aparecen<br>donde menos las buscas.</p></div>
+      </div>
+      <button class="sidebar-footer" id="help-button" type="button"><svg><use href="assets/icons.svg#help"/></svg>¿Cómo funciona?<svg class="footer-arrow"><use href="assets/icons.svg#arrow"/></svg></button>
+    </aside>
+    <div class="workspace">
+      <header class="topbar"><div class="topbar-left"><button class="icon-button mobile-menu" id="menu-button" type="button" aria-label="Mostrar temas" aria-expanded="false" aria-controls="sidebar"><svg><use href="assets/icons.svg#menu"/></svg></button><span>Tu espacio creativo</span><span class="topbar-slash">/</span><strong id="page-location">Estudio</strong></div><div class="topbar-right"><span class="local-indicator"></span><span class="quiet-tagline">Sin ruido. Solo ideas.</span><span class="avatar" aria-hidden="true">el.</span></div></header>
+      <main id="main" tabindex="-1">
+        <section id="studio-view" aria-labelledby="studio-title">
+          <div class="intro"><div><h1 id="studio-title">Las palabras están ahí.<br>Encuentra <em>tu conexión.</em></h1><p>Dos o tres palabras. Una conexión inesperada. Tu próxima letra.</p></div><div class="intro-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="orbit orbit-three"></span><svg><use href="assets/icons.svg#spark"/></svg></div></div>
+          <div class="generator-toolbar"><div class="word-setting"><span>Palabras por ronda</span><div class="segmented" role="group" aria-label="Cantidad de palabras"><button type="button" data-count="2" aria-pressed="false">2</button><button class="selected" type="button" data-count="3" aria-pressed="true">3</button></div></div><div class="generate-group"><span class="keyboard-hint">o presiona <kbd>espacio</kbd></span><button class="button button-primary" id="generate-button" type="button"><svg><use href="assets/icons.svg#shuffle"/></svg>Generar ideas</button></div></div>
+          <div class="prompt-grid" id="prompt-grid" aria-live="polite" aria-label="Tu combinación de palabras"></div>
+          <div class="round-actions"><p><svg aria-hidden="true"><use href="assets/icons.svg#unlock"/></svg>¿Te gusta una palabra? Fíjala y cambia las demás.</p><div class="round-buttons"><button class="text-button" id="copy-button" type="button"><svg><use href="assets/icons.svg#copy"/></svg>Copiar</button><button class="text-button" id="save-button" type="button"><svg><use href="assets/icons.svg#bookmark"/></svg>Guardar idea</button></div></div>
+          <section class="notebook" aria-labelledby="notebook-title"><div class="notebook-header"><h2 id="notebook-title"><svg aria-hidden="true"><use href="assets/icons.svg#pen"/></svg>De la idea al papel</h2><span class="autosave" id="autosave-status"><svg><use href="assets/icons.svg#check"/></svg><span>Guardado en este navegador</span></span></div><label class="sr-only" for="notebook">Escribe tus letras e ideas</label><textarea id="notebook" maxlength="10000" placeholder="No tiene que rimar todavía. Deja salir la primera línea…" spellcheck="true"></textarea><div class="notebook-footer"><span>Este espacio es tuyo. Escribe sin juzgarte.</span><span id="character-count">0 / 10 000</span></div></section>
+          <footer class="workspace-footer"><p>Un punto de partida. El resto lleva tu firma.</p><span id="bank-label"></span></footer>
+        </section>
+        <section id="ideas-view" class="ideas-view" aria-labelledby="ideas-title" hidden><div class="ideas-intro"><h1 id="ideas-title">Ideas que <em>se quedan.</em></h1><p>Conexiones que vale la pena volver a encontrar.</p></div><div id="saved-ideas"></div></section>
+        <section id="help-panel" class="help-panel" aria-labelledby="help-title" hidden><div class="help-header"><h2 id="help-title">Dale una vuelta a tu próxima letra</h2><button class="icon-button" id="close-help" type="button" aria-label="Cerrar ayuda"><svg><use href="assets/icons.svg#close"/></svg></button></div><ol><li>Selecciona los temas que te inspiran en <strong>Tu universo</strong>.</li><li>Elige dos o tres palabras y pulsa <strong>Generar ideas</strong> o la barra espaciadora.</li><li>Fija una palabra con el candado para conservarla en la siguiente ronda.</li><li>Escribe en tu libreta y guarda la combinación junto a tus notas.</li></ol><p>Las fotos son imágenes de ambiente de cada tema, no retratos ni fotogramas oficiales. Tus notas e ideas se guardan solo en este navegador, sin cuenta ni envío a un servidor.</p></section>
+      </main>
+    </div>
+  </div>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+  <noscript><p class="noscript">Activa JavaScript para generar combinaciones. No necesitas registrarte.</p></noscript>
+</body>
+</html>

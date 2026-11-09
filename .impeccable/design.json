@@ -1,0 +1,11 @@
+{
+  "direction": "After-hours editorial writing studio",
+  "mode": "operate",
+  "colors": {
+    "background": "#151615", "rail": "#111210", "surface": "#1b1c1a",
+    "border": "#2d2e2a", "foreground": "#f1eee7", "muted": "#a19f97", "accent": "#ff8057"
+  },
+  "typography": { "interface": "DM Sans", "expressive": "Instrument Serif italic" },
+  "radius": { "card": "14px", "button": "7px" },
+  "breakpoints": { "mobile": "720px", "compact": "950px", "wide": "1600px" }
+}

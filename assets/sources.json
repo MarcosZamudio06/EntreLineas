@@ -1,0 +1,17 @@
+{
+  "jewels": "https://images.unsplash.com/photo-1605100804763-247f67b3557e?w=900&q=85&fit=crop",
+  "artists": "https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=900&q=85&fit=crop",
+  "moments": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=900&q=85&fit=crop",
+  "couples": "https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?w=900&q=85&fit=crop",
+  "celebrities": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=900&q=85&fit=crop",
+  "movies": "https://images.unsplash.com/photo-1446776811953-b23d57bd21aa?w=900&q=85&fit=crop",
+  "actors": "https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=900&q=85&fit=crop",
+  "heroes": "https://images.unsplash.com/photo-1519501025264-65ba15a82390?w=900&q=85&fit=crop",
+  "places": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?w=900&q=85&fit=crop",
+  "feelings": "https://images.unsplash.com/photo-1500534623283-312aade485b7?w=900&q=85&fit=crop",
+  "nature": "https://images.unsplash.com/photo-1472396961693-142e6e269027?w=900&q=85&fit=crop",
+  "objects": "https://images.unsplash.com/photo-1461360370896-922624d12aa1?w=900&q=85&fit=crop",
+  "dm-sans-regular.ttf": "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAopxhTg.ttf",
+  "dm-sans-medium.ttf": "https://fonts.gstatic.com/s/dmsans/v17/rP2tp2ywxg089UriI5-g4vlH9VoD8CmcqZG40F9JadbnoEwAfJthTg.ttf",
+  "instrument-serif-italic.ttf": "https://fonts.gstatic.com/s/instrumentserif/v5/jizHRFtNs2ka5fXjeivQ4LroWlx-6zATiw.ttf"
+}
